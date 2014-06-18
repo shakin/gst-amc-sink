@@ -19,7 +19,7 @@ LOCAL_C_INCLUDES := $(GSTREAMER_SDK_ROOT_ANDROID)/include/gstreamer-1.0 \
 		    $(GSTREAMER_SDK_ROOT_ANDROID)/include \
 		    $(GSTREAMER_SDK_ROOT_ANDROID)/include/libxml2 \
 		    $(GSTREAMER_SDK_ROOT_ANDROID)/lib/glib-2.0/include
-LOCAL_CFLAGS += -DGST_PLUGIN_BUILD_STATIC
+LOCAL_CFLAGS += -DGST_PLUGIN_BUILD_STATIC -include src/rename-symbols.h
 
 include $(BUILD_STATIC_LIBRARY)
   
